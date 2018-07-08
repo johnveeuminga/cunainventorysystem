@@ -21,4 +21,22 @@ Route::namespace('Dashboard')
     ->name('dashboard.')
     ->group( function() {
         Route::get('/', 'DashboardController@index')->name('index');
+
+        Route::prefix('users')
+            ->name('users.')
+            ->group( function() {
+                Route::get('/', 'UserController@index')->name('index');
+            } );
+
+        Route::prefix( 'branches' )
+            ->name( 'branches.' )
+            ->group( function() {
+                Route::get( '/', 'BranchController@index' )->name( 'index' );
+            } );
+
+        Route::prefix( 'inventory' )
+            ->name( 'inventory.' )
+            ->group( function() {
+                Route::get( '/', 'InventoryController@index' )->name( 'index' );
+            } );
     });

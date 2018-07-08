@@ -11,19 +11,19 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{ route('dashboard.index') }}" class="text-uppercase nav-link">
+                <a href="{{ route('dashboard.branches.index') }}" class="text-uppercase nav-link">
                     <i class="fas fa-map-marker-alt"></i>
                     Branch
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{ route('dashboard.index') }}" class="text-uppercase nav-link">
+                <a href="{{ route('dashboard.inventory.index') }}" class="text-uppercase nav-link">
                     <i class="fas fa-wrench"></i>
                     Inventory
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{ route('dashboard.index') }}" class="text-uppercase nav-link">
+                <a href="{{ route('dashboard.users.index') }}" class="text-uppercase nav-link">
                     <i class="fas fa-users"></i>
                     Accounts
                 </a>
